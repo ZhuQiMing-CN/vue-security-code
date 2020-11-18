@@ -7,7 +7,7 @@
         </li>
       </ul>
     </label>
-    <input ref="input" class="input-code" @keyup="handleInput($event)" v-model="value"
+    <input ref="input" class="input-code" @input="handleInput($event)" v-model="value"
            :id="`code-${uuid}`" :name="`code-${uuid}`" type="tel" :maxlength="length"
            autocorrect="off" autocomplete="off" autocapitalize="off">
   </div>
